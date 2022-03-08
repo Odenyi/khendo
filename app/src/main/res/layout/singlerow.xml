@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:background="@color/white"
+    android:elevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/parent_layout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_laucher"
+            app:civ_border_color="#12AC18"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16ssp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Presenters bio"
+            android:textColor="#000"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

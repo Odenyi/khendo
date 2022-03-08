@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "336083507006",
+    "firebase_url": "https://khendo-11462-default-rtdb.firebaseio.com",
+    "project_id": "khendo-11462",
+    "storage_bucket": "khendo-11462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336083507006:android:61f301b0c3bf8a308efe6f",
+        "android_client_info": {
+          "package_name": "com.streaming.khendo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336083507006-uhvd9q6ltu1u2h1372n6nfq7dk6aqgq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjG19Q6PLTidtc-RJjrWDPbvzf2sqHnQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336083507006-uhvd9q6ltu1u2h1372n6nfq7dk6aqgq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336083507006:android:bc0ece45484b4e5c8efe6f",
+        "android_client_info": {
+          "package_name": "com.example.khendoadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336083507006-uhvd9q6ltu1u2h1372n6nfq7dk6aqgq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjG19Q6PLTidtc-RJjrWDPbvzf2sqHnQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336083507006-uhvd9q6ltu1u2h1372n6nfq7dk6aqgq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

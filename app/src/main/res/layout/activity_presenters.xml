@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacg"
+    tools:context="com.streaming.khendo.Presenters">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#098C35"
+        android:elevation="@dimen/_4sdp"
+        android:textSize="25sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="5sp"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/ic_laucher_round"
+            app:civ_border_color="#00BCD4"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="KHENDO FM 107.9"
+            android:textAlignment="center"
+            android:textColor="#F3960F"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            app:neumorph_shadowColorDark="#40321F"
+            app:neumorph_shadowColorLight="#08E310"
+            app:neumorph_shadowElevation="1.5sp"
+            app:neumorph_shapeType="flat" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_3sdp" />
+
+</RelativeLayout>

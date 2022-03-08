@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:neumorph_shadowColorDark="#045306"
+        app:neumorph_shadowColorLight="#09AF0F"
+        app:neumorph_shadowElevation="@dimen/_4sdp"
+        app:neumorph_shapeType="flat">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_view"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

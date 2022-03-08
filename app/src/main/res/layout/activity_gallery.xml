@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:weightSum="100">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#098C35"
+        android:elevation="@dimen/_4sdp"
+        android:textSize="25sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="5sp"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/ic_laucher_round"
+            app:civ_border_color="#00BCD4"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <soup.neumorphism.NeumorphTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="KHENDO FM 107.9"
+            android:textAlignment="center"
+            android:textColor="#F3960F"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            app:neumorph_shadowColorDark="#40321F"
+            app:neumorph_shadowColorLight="#08E310"
+            app:neumorph_shadowElevation="1.5sp"
+            app:neumorph_shapeType="flat" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_laucher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Canada"
+        android:textSize="24sp"
+        android:textColor="#101210"
+        />
+
+</LinearLayout>
