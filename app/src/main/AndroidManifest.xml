@@ -19,7 +19,8 @@
         android:icon="@mipmap/ic_laucher"
         android:label="@string/app_name"
         android:theme="@style/Theme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        >
         <activity
             android:name="com.streaming.khendo.Gallery"
             android:exported="true" />

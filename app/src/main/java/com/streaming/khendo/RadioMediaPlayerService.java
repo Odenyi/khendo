@@ -399,7 +399,7 @@ public class RadioMediaPlayerService extends Service implements AudioManager.OnA
           //Return to the current activity
             Intent intent = new Intent(this, Home.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
-            PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+            PendingIntent pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
 
 
 
@@ -408,16 +408,16 @@ public class RadioMediaPlayerService extends Service implements AudioManager.OnA
             //click the the button
             Intent playintent= new Intent(this,RadioMediaPlayerService.class);
             playintent.setAction(Constants.ACTION.PLAY_ACTION);
-            PendingIntent pIntent=PendingIntent.getService(this,0,playintent,0);
+            PendingIntent pIntent=PendingIntent.getService(this,0,playintent,PendingIntent.FLAG_IMMUTABLE);
 
 
             Intent pauseintent= new Intent(this,RadioMediaPlayerService.class);
             pauseintent.setAction(Constants.ACTION.PAUSE_ACTION);
-            PendingIntent paIntent=PendingIntent.getService(this,0,pauseintent,0);
+            PendingIntent paIntent=PendingIntent.getService(this,0,pauseintent,PendingIntent.FLAG_IMMUTABLE);
 
             Intent stopintent= new Intent(this,RadioMediaPlayerService.class);
             stopintent.setAction(Constants.ACTION.STOPFOREGROUND_ACTION);
-            PendingIntent stoppintent= PendingIntent.getService(this,0,stopintent,0);
+            PendingIntent stoppintent= PendingIntent.getService(this,0,stopintent,PendingIntent.FLAG_IMMUTABLE);
 
           //add ended here
    Notification notification = notificationBuilder.setOngoing(true)

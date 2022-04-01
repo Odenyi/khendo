@@ -6,13 +6,18 @@ plugins {
 
 android {
     compileSdk 31
+    signingConfigs {
+    realise{
+        v1SigningEnabled true
+        v2SigningEnabled true}
+    }
 
     defaultConfig {
         applicationId "com.streaming.khendo"
         minSdk 21
         targetSdk 31
-        versionCode 2
-        versionName "1.1"
+        versionCode 4
+        versionName "3.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         minSdkVersion 21
@@ -22,6 +27,8 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
         }
     }
     compileOptions {
@@ -62,5 +69,5 @@ dependencies {
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
-
+    implementation 'androidx.work:work-runtime:2.7.1'
 }

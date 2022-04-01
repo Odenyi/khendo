@@ -51,8 +51,7 @@ public class Home extends AppCompatActivity  {
             R.drawable.khendo10,
             R.drawable.khendo11,
             R.drawable.khendo13,
-            R.drawable.khendo14,
-            R.drawable.khendo15};
+            };
     /**
      * Done upon opening the activity
      */
